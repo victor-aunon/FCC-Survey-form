@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>Survey</title>
+    </head>
+    <body>
+        <main class="container">
+            <header class="header">
+                <h1 id="title">Programming interests survey</h1>
+                <p id="description">
+                    Help us by taking this short survey, thanks :)
+                </p>
+            </header>
+
+            <section class="form-container">
+                <form action="#" id="survey-form">
+                    <div class="form-element">
+                        <label for="name" id="name-label">Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your name"
+                            required
+                        />
+                    </div>
+                    <!--End of name-->
+                    <div class="form-element">
+                        <label for="email" id="email-label">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            pattern='^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$'
+                            placeholder="Your email"
+                            required
+                        />
+                    </div>
+                    <!--End of email-->
+                    <div class="form-element">
+                        <label for="number" id="number-label">Age</label>
+                        <input
+                            type="number"
+                            id="number"
+                            name="number"
+                            min="5"
+                            max="120"
+                            placeholder="Your age (5 to 120)"
+                            required
+                        />
+                    </div>
+                    <!--End of age-->
+                    <div class="form-element">
+                        <label for="dropdown" id="dropdown-label"
+                            >Which is your current situation?</label
+                        >
+                        <select name="dropdown" id="dropdown" required>
+                            <option disabled selected value="select">
+                                Select one option
+                            </option>
+                            <option value="student">Student</option>
+                            <option value="job">Full time job</option>
+                            <option value="self-taught">
+                                Self-taught person
+                            </option>
+                            <option value="retired">Retired</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <!--End of situation-->
+                    <div class="form-element">
+                        <p>
+                            Are you considering taking any programming course?
+                        </p>
+                        <label for="no">
+                            <input
+                                type="radio"
+                                id="no"
+                                name="consider_course"
+                                value="no"
+                                required
+                            />
+                            Definitely no
+                        </label>
+                        <label for="maybe">
+                            <input
+                                type="radio"
+                                id="maybe"
+                                name="consider_course"
+                                value="maybe"
+                                required
+                            />
+                            Maybe
+                        </label>
+                        <label for="taking">
+                            <input
+                                type="radio"
+                                id="taking"
+                                name="consider_course"
+                                value="taking"
+                                required
+                            />
+                            I'm already taking a course
+                        </label>
+                        <label for="soon">
+                            <input
+                                type="radio"
+                                id="soon"
+                                name="consider_course"
+                                value="soon"
+                                required
+                            />
+                            I'll take a course soon
+                        </label>
+                    </div>
+                    <!--End of considering coursr-->
+                    <div class="form-element">
+                        <p>
+                            Which programming languages are you willing to
+                            learn?
+                        </p>
+                        <label for="python">
+                            <input
+                                type="checkbox"
+                                id="python"
+                                name="languages"
+                                value="python"
+                            />
+                            Python
+                        </label>
+                        <label for="cpp">
+                            <input
+                                type="checkbox"
+                                id="cpp"
+                                name="languages"
+                                value="cpp"
+                            />
+                            C++
+                        </label>
+                        <label for="javascript">
+                            <input
+                                type="checkbox"
+                                id="javascript"
+                                name="languages"
+                                value="javascript"
+                            />
+                            JavaScript
+                        </label>
+                        <label for="scala">
+                            <input
+                                type="checkbox"
+                                id="scala"
+                                name="languages"
+                                value="scala"
+                            />
+                            Scala
+                        </label>
+                        <label for="golang">
+                            <input
+                                type="checkbox"
+                                id="golang"
+                                name="languages"
+                                value="golang"
+                            />
+                            Golang
+                        </label>
+                        <label for="rust">
+                            <input
+                                type="checkbox"
+                                id="rust"
+                                name="languages"
+                                value="rust"
+                            />
+                            Rust
+                        </label>
+                        <label for="kotlin">
+                            <input
+                                type="checkbox"
+                                id="kotlin"
+                                name="languages"
+                                value="kotlin"
+                            />
+                            Kotlin
+                        </label>
+                        <label for="csharp">
+                            <input
+                                type="checkbox"
+                                id="csharp"
+                                name="languages"
+                                value="csharp"
+                            />
+                            C#
+                        </label>
+                        <label for="java">
+                            <input
+                                type="checkbox"
+                                id="java"
+                                name="languages"
+                                value="java"
+                            />
+                            Java
+                        </label>
+                    </div>
+                    <div class="form-element">
+                        <label for="textarea">Do you have any comments?</label>
+                        <textarea
+                            name="textarea"
+                            id="textarea"
+                            cols="30"
+                            rows="10"
+                            placeholder="Write any comments here"
+                        ></textarea>
+                    </div>
+                    <div class="form-element">
+                        <button type="submit" id="submit" class="submit-button">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
